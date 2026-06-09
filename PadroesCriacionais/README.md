@@ -1,6 +1,8 @@
 # Prototype - Protótipo, Clone
 
-Créditos: https://refactoring.guru/pt-br/design-patterns/prototype, https://stackoverflow.com/questions/13887704/whats-the-point-of-the-prototype-design-pattern
+Créditos: 
+1. https://refactoring.guru/pt-br/design-patterns/prototype
+2. https://stackoverflow.com/questions/13887704/whats-the-point-of-the-prototype-design-pattern
 
 ## Propósito
 
@@ -10,7 +12,7 @@ O Prototype é um padrão de projeto criacional que permite copiar objetos exist
 
 Digamos que você tenha um objeto, e você quer criar uma cópia exata dele. Como você o faria? Primeiro, você tem que criar um novo objeto da mesma classe. Então você terá que ir por todos os campos do objeto original e copiar seus valores para o novo objeto.
 
-Legal! Mas tem uma pegadinha. Nem todos os objetos podem ser copiados dessa forma porque alguns campos de objeto podem ser privados e não serão visíveis fora do próprio objeto.
+Legal, Mas tem uma pegadinha. Nem todos os objetos podem ser copiados dessa forma porque alguns campos de objeto podem ser privados e não serão visíveis fora do próprio objeto.
 
 Há ainda mais um problema com a abordagem direta. Uma vez que você precisa saber a classe do objeto para criar uma cópia, seu código se torna dependente daquela classe. Se a dependência adicional não te assusta, tem ainda outra pegadinha. Algumas vezes você só sabe a interface que o objeto segue, mas não sua classe concreta, quando, por exemplo, um parâmetro em um método aceita quaisquer objetos que seguem uma interface.
 
