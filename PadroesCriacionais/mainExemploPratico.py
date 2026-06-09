@@ -1,12 +1,5 @@
 import copy
 
-class SelfReferencingEntity:
-    def __init__(self):
-        self.parent = None
-
-    def set_parent(self, parent):
-        self.parent = parent
-
 class Pizza:
     def __init__(self, name, ingredients):
         self.name = name
